@@ -10,12 +10,11 @@ html{
 }
 
 body {
-    font-family: 'Playfair Display', serif; /* Elegant serif font */
-    color: #333; /* Darker text for readability */
-    background-color: #f4f1ea; /* Light beige background */
+    font-family: 'Playfair Display', serif; 
+    color: #333;
+    background-color: #f4f1ea; 
 }
 
-/* Navigation Bar */
 .navbar {
     position: sticky;
     display: flex;
@@ -24,7 +23,7 @@ body {
     width: 100%;
     top: 0;
     left: 0;
-    background-color: #fff8ed; /* Semi-transparent dark purple */
+    background-color: #fff8ed;
     padding: 15px 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.06);
     z-index: 1;
@@ -42,7 +41,7 @@ body {
 .nav-logo {
     font-family: 'Playfair Display', serif;
     font-size: 1.75rem;
-    color: #f4f1ea; /* Off-white text */
+    color: #f4f1ea; 
     text-decoration: none;
 }
 
@@ -54,23 +53,22 @@ body {
 }
 
 .nav-menu li {
-    margin-right: auto; /* Add this line */
+    margin-right: auto;
 }
 
 .nav-menu li a {
     font-family: 'Playfair Display', serif;
     font-size: 1.25rem;
-    color: #304254; /* Off-white */
+    color: #304254; 
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .nav-menu li a:hover {
-    color: #b48ca2; /* Soft purple on hover */
+    color: #b48ca2; 
 }
 
 
-/* Hamburger icon */
 .hamburger {
     display: none;
     flex-direction: column;
@@ -84,9 +82,8 @@ body {
     margin: 4px 0;
 }
 
-/* Hero Section */
 .hero-section {
-    height: 90vh;
+    height: 75vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,39 +104,54 @@ body {
 }
 
 .hero-section .content {
-    margin: 0 auto; /* Center horizontally */
+    margin: 0 auto; 
     text-align: center;
-    border: 2px solid rgba(255, 255, 255, 0.6); /* Soft white border */
-    padding: 50px;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    padding: 60px;
+}
+
+.hero-section h1 {
+    font-family: 'Edwardian Script ITC', cursive; 
+    font-size: 10rem;
+    margin: 10px 0;
+    font-weight: 40; 
 }
 
 .hero-section h4 {
-    font-size: 1rem; /* Increase font size */
+    font-size: 1.75rem; 
+    transform: translateY(50px);
+
 }
 
 .hero-section p {
-    font-size: 2rem; /* Increase font size */
-    margin-bottom: 25px;
+    font-size: 2rem; 
+    margin: 20px;
+    position: relative; 
+    font-family: 'Georgia', serif; 
+    transform: translateY(-40px);
+
 }
 
-h4 {
-    font-size: 1rem;
+.hero-section p::before,
+.hero-section p::after {
+  content: "";
+  transform: translateX(-42px);
+  position: absolute;
+  height: 350%;
+  border-left: 1.5px solid #fff;
+  rotate: 90deg;
 }
 
-h1 {
-    font-family: 'Edwardian Script ITC', cursive; /* Elegant serif for main title */
-    font-size: 8rem;
-    margin: 10px 0;
-    font-weight: 40; /* Add this line to make the font thinner */
+.hero-section p::before {
+  left: 10vh; 
 }
 
-p {
-    font-family: 'Georgia', serif; /* Serif for subtitle */
-    font-size: 1.25rem;
+.hero-section p::after {
+  right: 10vh; 
 }
 
 .cta-button {
-    background-color: #b48ca2; /* Soft purple */
+    background-color: #b48ca2; 
     color: white;
     padding: 10px 30px;
     text-decoration: none;
@@ -148,34 +160,70 @@ p {
     border: none;
     position: relative;
     width: 40%;
-    display: block;
     margin: 0 auto;
-    max-width: 100%;
 }
 
 .cta-button:hover {
-    background-color: #9c7088; /* Darker purple on hover */
+    background-color: #9c7088; 
 }
 
-/* Intro Section */
 .intro {
     padding: 60px 20px;
-    background-color: #6e4a64; /* Deep purple background */
+    background-color: #642b62; 
     text-align: center;
-    color: #f4f1ea; /* Light text for contrast */
+    color: #f4f1ea; 
     font-size: 1.75rem;
     line-height: 1.5;
-    display: flex;
+    display: block;
     justify-content: space-around;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
-/* Villas Section */
+.intro h2{
+    font-size: 4rem;
+    text-align: center;
+    width: 59%;
+    margin: 0 auto;
+}
+
+.intro p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    opacity: 70%;
+}
+
+.intro-images {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    padding: 20px;
+    opacity: 50%;
+}
+  
+.intro-images img {
+    width: 10%;
+    height: auto;
+    margin: 0;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.intro-images .bighouse {
+    width: 15%;
+    height: auto;
+    margin: 0;
+    border-radius: 10px;
+}
+  
 .villas {
     display: flex;
     justify-content: space-around;
-    background-color: #fff;
+    background-color: #fff8ed;
     padding: 50px 20px;
-    margin-bottom: 30px;
 }
 
 .villa {
@@ -191,7 +239,7 @@ p {
 .villa h3 {
     margin-top: 10px;
     font-family: 'Playfair Display', serif;
-    color: #3b2c3a; /* Dark muted purple */
+    color: #3b2c3a; 
 }
 
 .villa p {
@@ -199,11 +247,10 @@ p {
     color: #666;
 }
 
-/* Garden Villa Highlight Section */
 .highlight {
     display: flex;
     justify-content: space-around;
-    background-color: #f4f1ea; /* Light beige background */
+    background-color: #fff8ed; 
     padding: 50px 20px;
     text-align: center;
 }
@@ -226,11 +273,10 @@ p {
     color: #666;
 }
 
-/* Special Offers Section */
 .special-offers {
     display: flex;
     justify-content: space-around;
-    background-color: #b48ca2; /* Light purple */
+    background-color: #b093a8;
     color: white;
     padding: 50px 20px;
 }
@@ -254,9 +300,8 @@ p {
     font-family: 'Georgia', serif;
 }
 
-/* Testimonials Section */
 .testimonials {
-    background-color: #6e4a64; /* Deep purple */
+    background-color: #642b62; 
     color: white;
     padding: 50px 20px;
     text-align: center;
@@ -273,7 +318,7 @@ p {
     margin: 20px;
     font-family: 'Georgia', serif;
     font-size: 1.1rem;
-    color: #f4f1ea; /* Off-white for text */
+    color: #f4f1ea; 
 }
 
 .testimonial h4 {
@@ -281,9 +326,8 @@ p {
     font-weight: bold;
 }
 
-/* Footer Section */
 footer {
-    background-color: #3b2c3a; /* Dark muted purple */
+    background-color: #3b2c3a;
     color: white;
     padding: 50px;
     text-align: center;
@@ -300,221 +344,3 @@ footer p {
     color: #f4f1ea;
 }
 
-/* Media queries for smaller devices */
-
-/* For screens with a maximum width of 768px (tablets) */
-@media only screen and (max-width: 768px) {
-    .nav-menu {
-        display: none; /* Hide menu by default on smaller screens */
-        flex-direction: column; /* Vertical layout for the mobile menu */
-        position: absolute;
-        right: 0;
-        top: 60px;
-        background-color: #fff8ed; /* Dark background for mobile menu */
-        width: 200px;
-        padding: 20px;
-        z-index: 999; /* Ensure it's above other content */
-    }
-
-    .nav-menu.active {
-        display: flex; /* Show menu when active */
-    }
-
-    /* Hamburger Menu Icon */
-    .hamburger {
-        display: flex;
-        flex-direction: column;
-        cursor: pointer;
-        z-index: 1000;
-
-    }
-
-    .hamburger .bar {
-        width: 25px;
-        height: 3px;
-        background-color: #525252;
-        margin: 4px 0;
-        transition: 0.3s;
-    }
-
-    /* Toggle effect for Hamburger Menu */
-    .hamburger.toggle .bar:nth-child(1) {
-        transform: rotate(-45deg) translate(-10px, 6px);
-    }
-
-    .hamburger.toggle .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.toggle .bar:nth-child(3) {
-        transform: rotate(45deg) translate(-10px, -6px);
-    }
-
-    .hero-section .content {
-        padding: 30px;
-        width: 80%;
-    }
-
-    .hero-section h4 {
-        margin-bottom: 15px;
-    }
-
-    .hero-section h1 {
-        margin-bottom: 20px;
-        font-size: 100px;
-
-    }
-
-    .hero-section p {
-        font-size: 1.5rem;
-        margin-bottom: 25px;
-    }
-
-    .hero-section .cta-button {
-        padding: 15px 40px;
-        width: 40%;
-
-    }
-
-}
-
-/* For screens with a maximum width of 480px (smartphones) */
-@media only screen and (max-width: 480px) {
-    .nav-menu {
-        display: none; /* Hide menu by default on smaller screens */
-        flex-direction: column; /* Vertical layout for the mobile menu */
-        position: absolute;
-        right: 0;
-        top: 60px;
-        background-color: #fff8ed; /* Dark background for mobile menu */
-        width: 200px;
-        padding: 20px;
-        z-index: 999; /* Ensure it's above other content */
-    }
-
-    .nav-menu.active {
-        display: flex; /* Show menu when active */
-    }
-
-    /* Hamburger Menu Icon */
-    .hamburger {
-        display: flex;
-        flex-direction: column;
-        cursor: pointer;
-    }
-
-    .hamburger .bar {
-        width: 25px;
-        height: 3px;
-        background-color: #525252;
-        margin: 4px 0;
-        transition: 0.3s;
-    }
-
-    /* Toggle effect for Hamburger Menu */
-    .hamburger.toggle .bar:nth-child(1) {
-        transform: rotate(-45deg) translate(-5px, 6px);
-    }
-
-    .hamburger.toggle .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.toggle .bar:nth-child(3) {
-        transform: rotate(45deg) translate(-5px, -6px);
-    }
-
-    .hero-section .content {
-        padding: 20px;
-        width: 90%;
-    }
-
-    .hero-section h4 {
-        margin-bottom: 10px;
-    }
-
-    .hero-section h1 {
-        margin-bottom: 15px;
-        font-size: 80px;
-    }
-
-    .hero-section p {
-        margin-bottom: 20px;
-    }
-
-    .hero-section .cta-button {
-        padding: 10px 30px;
-        width: 40%;
-
-    }
-}
-
-/* For screens with a maximum width of 320px (smaller smartphones) */
-@media only screen and (max-width: 320px) {
-    .nav-menu {
-        display: none; /* Hide menu by default on smaller screens */
-        flex-direction: column; /* Vertical layout for the mobile menu */
-        position: absolute;
-        right: 0;
-        top: 60px;
-        background-color: #fff8ed; /* Dark background for mobile menu */
-        width: 200px;
-        padding: 20px;
-        z-index: 999; /* Ensure it's above other content */
-    }
-
-    .nav-menu.active {
-        display: flex; /* Show menu when active */
-    }
-
-    /* Hamburger Menu Icon */
-    .hamburger {
-        display: flex;
-        flex-direction: column;
-        cursor: pointer;
-    }
-
-    .hamburger .bar {
-        width: 25px;
-        height: 3px;
-        background-color: #525252;
-        margin: 4px 0;
-        transition: 0.3s;
-    }
-
-    /* Toggle effect for Hamburger Menu */
-    .hamburger.toggle .bar:nth-child(1) {
-        transform: rotate(-45deg) translate(-5px, 6px);
-    }
-
-    .hamburger.toggle .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.toggle .bar:nth-child(3) {
-        transform: rotate(45deg) translate(-5px, -6px);
-    }
-
-    .hero-section .content {
-        padding: 15px;
-        width: 95%;
-    }
-
-    .hero-section h4 {
-        margin-bottom: 5px;
-    }
-
-    .hero-section h1 {
-        margin-bottom: 10px;
-        font-size: 60px;
-    }
-
-    .hero-section p {
-        margin-bottom: 15px;
-    }
-
-    .hero-section .cta-button {
-        padding: 5px 1px;
-        width: 40%;
-    }
-}
