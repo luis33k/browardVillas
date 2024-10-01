@@ -476,7 +476,7 @@ body {
     display: flex;
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 85vh;
     overflow: hidden;
 }
 
@@ -517,17 +517,20 @@ body {
 
 .testimonial h4 {
     bottom: 0;
-    margin-top: 10px;
-    font-size: 2.5rem;
+    position: absolute;
+    margin: 25px;
+    font-size: 2.2rem;
     font-family: 'Edwardian Script ITC', cursive; ;
+    transform: translateY(-40px);
 }
 
 .testimonial p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     text-align: left;
     margin-bottom: 10px;
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .testimonial p::before {
@@ -544,11 +547,69 @@ body {
     left: 0;
 }
 
-footer {
-    background-color: #3b2c3a;
+.testimonial:last-child h4 {
+    margin-right: 0;
+}
+
+footer{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Georgia', serif;
     color: white;
-    padding: 50px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.conact-container {
+    text-align: left;
+    padding: 20px;
+    z-index: 1;
+}
+
+.main-text {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.sub-text {
+    font-size: 2em;
+    margin-top: -20px;
+}
+
+.contact-info {
+    margin-top: 20px;
+    font-size: 1em;
+}
+
+.social-logos {
+    margin-top: 10px;
+}
+
+.social-logos i {
+    margin-right: 10px;
+    font-size: 1.5em;
+}
+
+.logo {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 2em;
+    font-family: 'Brush Script MT', cursive;
+    z-index: 1;
 }
 
 footer h2 {
