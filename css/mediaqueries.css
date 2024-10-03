@@ -1,0 +1,340 @@
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        display: none; 
+        flex-direction: column; 
+        position: absolute;
+        right: 0;
+        top: 40px;
+        background-color: #fff8ed;
+        width: 200px;
+        padding: 20px;
+        z-index: 999; 
+    }
+
+    .nav-menu.active {
+        display: flex; 
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        z-index: 1000;
+
+    }
+
+    .hamburger .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #525252;
+        margin: 4px 0;
+        transition: 0.3s;
+    }
+
+    .hamburger.toggle .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-10px, 6px);
+    }
+
+    .hamburger.toggle .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.toggle .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-10px, -6px);
+    }
+
+    .hero-section .content {
+        padding: 30px;
+        width: 80%;
+    }
+
+    .hero-section h4 {
+        margin-bottom: 15px;
+    }
+
+    .hero-section h1 {
+        margin-bottom: 20px;
+        font-size: 100px;
+
+    }
+
+    .hero-section p {
+        font-size: 1.5rem;
+        margin-bottom: 25px;
+        position: relative; 
+
+    }
+
+    .hero-section .cta-button {
+        padding: 15px 40px;
+        width: 40%;
+
+    }
+
+    .hero-section p::before,
+    .hero-section p::after {
+    content: "";
+    transform: translateX(-50px);
+    position: absolute;
+    height: 400%;
+    border-left: 1.5px solid #fff;
+    rotate: 90deg;
+    }
+
+    .hero-section p::before {
+    left: 10px; 
+    }
+
+    .hero-section p::after {
+    right: 10px; 
+    }
+
+    .intro h2{
+        font-size: 4rem;
+        text-align: center;
+        width: 59%;
+        margin: 0 auto;
+    }
+
+    .intro-images {
+        flex-wrap: wrap;
+    }
+    
+    .intro-images img {
+        width: 40%;
+        margin: 10px;
+    }
+
+    .intro-images .bighouse {
+        width: 15%;
+        height: auto;
+        margin: 0;
+        border-radius: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column; 
+        position: absolute;
+        right: 0;
+        top: 40px;
+        background-color: #fff8ed; 
+        width: 200px;
+        padding: 20px;
+        z-index: 999; 
+    }
+
+    .nav-menu.active {
+        display: flex; 
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        z-index: 1000;
+
+    }
+
+    .hamburger .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #525252;
+        margin: 4px 0;
+        transition: 0.3s;
+    }
+
+    .hamburger.toggle .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-10px, 6px);
+    }
+
+    .hamburger.toggle .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.toggle .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-10px, -6px);
+    }
+
+    .hero-section .content {
+        padding: 20px;
+        width: 90%;
+    }
+
+    .hero-section h4 {
+        margin-bottom: 10px;
+    }
+
+    .hero-section h1 {
+        margin-bottom: 15px;
+        font-size: 80px;
+    }
+
+    .hero-section p {
+        margin-bottom: 20px;
+        position: relative; 
+
+    }
+
+    .hero-section .cta-button {
+        padding: 10px 30px;
+        width: 40%;
+
+    }
+
+    .hero-section p::before,
+    .hero-section p::after {
+    content: "";
+    transform: translateX(-50px);
+    position: absolute;
+    height: 400%;
+    border-left: 1.5px solid #fff;
+    rotate: 90deg;
+    }
+
+    .hero-section p::before {
+    left: 10px; 
+    }
+
+    .hero-section p::after {
+    right: 10px; 
+    }
+
+    .intro h2{
+        font-size: 4rem;
+        text-align: center;
+        width: 59%;
+        margin: 0 auto;
+    }
+
+    .intro-images {
+        flex-wrap: wrap;
+    }
+    
+    .intro-images img {
+        width: 40%;
+        margin: 10px;
+    }
+
+    .intro-images .bighouse {
+        width: 15%;
+        height: auto;
+        margin: 0;
+        border-radius: 10px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .nav-menu {
+        display: none; 
+        flex-direction: column; 
+        position: absolute;
+        right: 0;
+        top: 40px;
+        background-color: #fff8ed; 
+        width: 200px;
+        padding: 20px;
+        z-index: 999; 
+    }
+
+    .nav-menu.active {
+        display: flex; 
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        z-index: 1000;
+
+    }
+
+    .hamburger .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #525252;
+        margin: 4px 0;
+        transition: 0.3s;
+    }
+
+    .hamburger.toggle .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-10px, 6px);
+    }
+
+    .hamburger.toggle .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.toggle .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-10px, -6px);
+    }
+
+    .hero-section .content {
+        padding: 15px;
+        width: 95%;
+    }
+
+    .hero-section h4 {
+        margin-bottom: 5px;
+    }
+
+    .hero-section h1 {
+        margin-bottom: 10px;
+        font-size: 60px;
+    }
+
+    .hero-section p {
+        margin-bottom: 15px;
+        position: relative; 
+
+    }
+
+    .hero-section .cta-button {
+        padding: 5px 1px;
+        width: 40%;
+    }
+
+    .hero-section p::before,
+    .hero-section p::after {
+    content: "";
+    transform: translateX(-50px);
+    position: absolute;
+    height: 400%;
+    border-left: 1.5px solid #fff;
+    rotate: 90deg;
+    }
+
+    .hero-section p::before {
+    left: 10px; 
+    }
+
+    .hero-section p::after {
+    right: 10px; 
+    }
+
+    .intro h2{
+        font-size: 4rem;
+        text-align: center;
+        width: 59%;
+        margin: 0 auto;
+    }
+
+    .intro-images {
+        flex-wrap: wrap;
+    }
+    
+    .intro-images img {
+        width: 40%;
+        margin: 10px;
+    }
+
+    .intro-images .bighouse {
+        width: 15%;
+        height: auto;
+        margin: 0;
+        border-radius: 10px;
+    }
+}
